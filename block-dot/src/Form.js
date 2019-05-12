@@ -20,7 +20,8 @@ class Form extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 	onChange = evt => {
-		
+		const value = evt.target.value;
+		this.setState({message: value});
 	}
 	handleClick = (evt) => {
 		evt.preventDefault();
