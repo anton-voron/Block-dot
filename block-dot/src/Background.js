@@ -3,7 +3,7 @@ import background from './background.png';
 import './App.css';
 
 class Background extends Component {
-	render = (evt) => {
+	render () {
 		return (
 			<div>
 				<img src={background} className="background" alt="background"/>
