@@ -3,7 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import * as firebase from 'firebase';
 
+var config = {
+	apiKey:"AIzaSyB5yFt6gS_xe__qszfTbYsb0ljIUSv7NO",
+	authDomain: "web-quickstart-5505a.firebaseapp.com",
+	databaseURL: "https://web-quickstart-5505a.firebaseio.com",
+	storageBucket: "web-quickstart-5505a.appspot.com"
+}
+
+firebase.initializeApp(config);
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
